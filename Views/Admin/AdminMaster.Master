@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ClinicMS.Views.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../../Assets/Libraries/BootStrap/css/bootstrap.min.css" />
+</head>
+<body style="background-image:url(data:image/jpeg;base64,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); background-size:cover">
+     <nav class="navbar navbar-expand-lg navbar-light bg-success text-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Zydus Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light"  href="Doctors.aspx">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="Laboratorians.aspx">Laboratorians</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="Receptionist.aspx">Receptionist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../Login.aspx">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Mybody" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+   
+</body>
+</html>
